@@ -42,13 +42,145 @@
     <title>Hello, world!</title>
   </head>
   <body class="animate__animated animate__fadeIn">
-    <div class="container">
-      <header id="header" class=""></header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <div id="navLogo">
+            <span>gog</span>
+            <span>com</span>
+          </div>
+        </a>
 
-      <main id="main" class=""></main>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <footer id="footer" class=""></footer>
-    </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-2 mr-auto">
+            <li class="nav-item dropdown mr-lg-2">
+              <a
+                class="nav-link dropdown-toggle text-uppercase"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Store
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown mr-lg-2">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                ABOUT
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown mr-lg-2">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                COMMUNITY
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown mr-lg-2">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                SUPPORT
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown mr-lg-2">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownSignIn"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                SIGN IN
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+
+          <form class="form-inline my-2 my-lg-0 d-none">
+            <input
+              class="form-control mr-sm-2 w-50"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+
+          <div class="nav-icons">
+            <a href="#" class="mr-4"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#" class="d-none"><i class="fas fa-times"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

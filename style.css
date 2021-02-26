@@ -2,7 +2,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;700&display=swap'); */
 /* fonts */
 :root {
@@ -36,7 +36,7 @@ html {
 } */
 
 body {
-  background: var(--clr-light);
+  background-color: rgb(216, 216, 216);
   color: var(--clr-dark);
   font-family: var(--ff-primary);
   /* font-size: var(--fs-body); */
@@ -56,4 +56,42 @@ h6 {
   background-color: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+}
+
+/* navbar */
+nav.navbar {
+  background: #2d2d2dee !important;
+  border-top: 5px solid rgb(115, 40, 143) !important;
+}
+/* logo */
+#navLogo {
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  background-color: #f8f8f8;
+  color: #303030;
+  border-radius: 8px;
+  padding: 0.2rem 0.2rem;
+  text-align: center;
+  line-height: 1.3;
+}
+#navLogo span {
+  display: block;
+}
+
+/* dropdown */
+#navbarDropdownSignIn {
+  color: #b272dd !important;
+}
+
+nav.navbar .nav-link {
+  font-weight: 600;
+}
+
+.nav-icons a {
+  color: rgba(255, 255, 255, 0.5);
+}
+.nav-icons a:hover {
+  color: rgba(255, 255, 255, 1);
 }
