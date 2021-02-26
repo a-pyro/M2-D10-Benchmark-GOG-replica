@@ -186,3 +186,12 @@ nav.navbar .nav-link {
   font-size: 1rem;
   color: #303030;
 }
+
+/* writing section  */
+.vertical-border {
+  border-left: 1px solid grey;
+}
+
+.text-violet {
+  color: #985eb2;
+}
