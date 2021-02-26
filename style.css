@@ -165,3 +165,24 @@ nav.navbar .nav-link {
   bottom: 17%;
   left: 5%;
 }
+
+/* one line cards section */
+.card-custom {
+  background: #ededed;
+}
+
+.badge-soon {
+  padding: 0.5rem 0.85rem;
+  background: #094a77;
+  color: #f8f8f8;
+  border-radius: unset;
+}
+
+#oneRowCards .badge-soon {
+  top: 49%;
+}
+
+#oneRowCards .game-price {
+  font-size: 1rem;
+  color: #303030;
+}
