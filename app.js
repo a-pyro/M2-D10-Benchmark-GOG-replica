@@ -183,3 +183,7 @@ salesLI.forEach((item) =>
 
 const carousel = document.getElementById('carouselExampleIndicators2');
 console.log(carousel);
+
+// const showCarousel = (carouselItem,  )
+
+// const fillCarousel
