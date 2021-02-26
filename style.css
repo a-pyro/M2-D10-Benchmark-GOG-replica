@@ -96,13 +96,14 @@ nav.navbar .nav-link {
   color: rgba(255, 255, 255, 1);
 }
 
-/* CAROSELLOOOOOOOOOOOOOO */
+/* CAROSELLOOOOOOOOOOOOOO --------------------------*/
 #carouselExampleIndicators img {
   min-height: 40vh;
   /* max-height: 40vh; */
   object-fit: cover;
 }
 
+/* controlli carosello */
 #carouselExampleIndicators > .carousel-indicators {
   bottom: -10%;
 }
@@ -120,8 +121,47 @@ nav.navbar .nav-link {
 #carouselExampleIndicators
   > a.carousel-control-next
   > span.carousel-control-next-icon {
-  border: 6px solid dimgrey;
+  border: 6px solid rgb(216, 216, 216);
   border-radius: 50%;
   padding: 1.2rem;
   background-color: grey;
+}
+
+/* cose detro alle immagini del carosello */
+.carousel-item-content {
+  bottom: 5%;
+  left: 0;
+  right: 0;
+}
+
+.game-price {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.game-discount {
+  background-color: rgb(115, 40, 143);
+  color: #f8f8f8;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.game-add-to-cart-btn-green {
+  padding: 0.5rem 0.8rem;
+  font-weight: bold;
+  color: #f8f8f8;
+  border: 0.5px solid #303030;
+  background: linear-gradient(-180deg, #c1ec51, #80b02a);
+}
+.game-add-to-cart-btn-purple {
+  padding: 0.5rem 0.8rem;
+  color: #f8f8f8;
+  border: 1px solid #303030;
+  font-weight: bold;
+  background: linear-gradient(-180deg, #985eb2, #723bbd);
+}
+
+.game-platmforms-news {
+  bottom: 17%;
+  left: 5%;
 }
