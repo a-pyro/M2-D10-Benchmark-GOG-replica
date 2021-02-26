@@ -170,3 +170,16 @@ const imgWidth256 = [
   'https://images-3.gog-statics.com/0f76094e3d5644de1b03005b1edc6ffb0eba45664662a144370c1da75f89de8e_product_tile_256.jpg',
   'https://images-1.gog-statics.com/6b554f8440a33a5eaa5854da0928fb8641164f6ec24b042a106f9065fde72975_product_tile_256.jpg',
 ];
+
+const salesLI = document.querySelectorAll('#salesUL > li > a');
+salesLI.forEach((item) =>
+  item.addEventListener('click', (e) => {
+    e.preventDefault();
+    console.log(e.target);
+    salesLI.forEach((item) => item.classList.remove('active'));
+    e.target.classList.add('active');
+  })
+);
+
+const carousel = document.getElementById('carouselExampleIndicators2');
+console.log(carousel);
