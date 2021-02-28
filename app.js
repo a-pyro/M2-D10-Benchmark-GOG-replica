@@ -171,22 +171,37 @@ const imgWidth256 = [
   'https://images-1.gog-statics.com/6b554f8440a33a5eaa5854da0928fb8641164f6ec24b042a106f9065fde72975_product_tile_256.jpg',
 ];
 
+// const fillCarousel
+const horizontalImages = document.querySelectorAll('.img-horizontal');
+horizontalImages.forEach((image) => {
+  image.src = `gog-assets/tile (${Math.floor(Math.random() * 38) + 1}).jpg`;
+});
+
+// now on sale navbar carousel toggler
+const carousels = [...document.querySelectorAll('.carousel')].slice(1);
+console.log(carousels);
+
 const salesLI = document.querySelectorAll('#salesUL > li > a');
 salesLI.forEach((item) =>
   item.addEventListener('click', (e) => {
     e.preventDefault();
     console.log(e.target);
     salesLI.forEach((item) => item.classList.remove('active'));
+    carousels.forEach((carousel) => carousel.classList.add('d-none'));
     e.target.classList.add('active');
+    const wordToSearch = e.target.innerText.split(' ')[0].toLowerCase();
+    console.log(wordToSearch);
+    const carouselToShow = carousels.find(
+      (carousel) => carousel.id.toLowerCase().indexOf(wordToSearch) !== -1
+    );
+    carouselToShow.classList.add(
+      'animate__animated',
+      'animate__slideInDown',
+      'animate__fadeIN',
+      'animate__faster'
+    );
+    setTimeout(() => {
+      carouselToShow.classList.remove('d-none');
+    }, 500);
   })
 );
-
-const carousel = document.getElementById('carouselExampleIndicators2');
-
-// const showCarousel = (carouselItem,  )
-
-// const fillCarousel
-const horizontalImages = document.querySelectorAll('.img-horizontal');
-horizontalImages.forEach((image) => {
-  image.src = `gog-assets/tile (${Math.floor(Math.random() * 38) + 1}).jpg`;
-});
