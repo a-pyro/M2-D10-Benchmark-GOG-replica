@@ -345,7 +345,8 @@ nav.navbar .nav-link {
 .vertical-card-heading {
   font-size: 1.4rem;
   font-weight: bold;
-  padding: 0.4rem 0;
+  /* padding: 0.4rem 0; */
+  margin-bottom: 0;
 }
 /* featuredDealsCarousel carousel */
 
