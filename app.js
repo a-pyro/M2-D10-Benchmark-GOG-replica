@@ -182,8 +182,11 @@ salesLI.forEach((item) =>
 );
 
 const carousel = document.getElementById('carouselExampleIndicators2');
-console.log(carousel);
 
 // const showCarousel = (carouselItem,  )
 
 // const fillCarousel
+const horizontalImages = document.querySelectorAll('.img-horizontal');
+horizontalImages.forEach((image) => {
+  image.src = `gog-assets/tile (${Math.floor(Math.random() * 38) + 1}).jpg`;
+});
