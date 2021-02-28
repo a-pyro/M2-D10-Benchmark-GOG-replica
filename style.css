@@ -356,10 +356,23 @@ nav.navbar .nav-link {
 
 .horizontal-card {
   background: #ededed;
+  cursor: pointer;
 }
 
 .horizontal-card-game-platforms {
   font-size: 0.8rem;
+}
+.horizontal-card-game-buy {
+  display: none;
+}
+.horizontal-card:hover .horizontal-card-game-buy {
+  display: initial;
+}
+.horizontal-card:hover .horizontal-card-game-platforms {
+  display: none;
+}
+
+.horizontal-card-game-discount {
 }
 /* animations */
 
