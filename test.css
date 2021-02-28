@@ -42,6 +42,7 @@ body {
   /* font-size: var(--fs-body); */
   /* line-height: 1.6; */
   line-height: 1.5;
+  height: 5000vh;
 }
 h1,
 h2,
@@ -126,7 +127,7 @@ nav.navbar .nav-link {
     object-fit: contain;
   } 
 } */
-.carousel-item {
+#carouselExampleIndicators .carousel-item {
   height: 40vh;
 }
 
@@ -255,7 +256,8 @@ nav.navbar .nav-link {
   color: #985eb2;
 }
 
-/* now on sale section */
+/* now on sale section ------------------------------ */
+/* nav */
 #salesUL li a {
   color: grey;
   padding-left: 0;
@@ -273,9 +275,103 @@ nav.navbar .nav-link {
   border-bottom: 4px solid #723bbd;
 }
 
-/* second carousel */
-#carouselExampleIndicators2 img {
-  height: 30vh;
+/* general carousel cards styling */
+.now-on-sale-section .img-vertical {
+  min-height: 35vh;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* carousel controllers postion */
+/* featuredDealsCarousel carousel */
+.carousel-control-prev {
+  left: -3%;
+}
+.carousel-control-next {
+  right: -3%;
+}
+
+.carousel-indicators {
+  bottom: -15%;
+}
+/* overlays */
+.vertical-card {
+  position: relative;
+  color: #f8f8f8;
+  text-align: center;
+  cursor: pointer;
+}
+
+.vertical-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: 2;
+  transition: all 0.3s;
+}
+.vertical-card.overlay-pink::after {
+  background: #bd3e7d;
+}
+.vertical-card.overlay-violet::after {
+  background: #a561c2;
+}
+.vertical-card.overlay-light-blue::after {
+  background: #72cbe4;
+}
+.vertical-card.overlay-grey::after {
+  background: #0a0a0a;
+}
+.vertical-card:hover::after {
+  filter: brightness(1.3);
+}
+.vertical-card.overlay-grey:hover::after {
+  opacity: 0.3;
+}
+
+/* vertical card inner content */
+.vertical-card-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  z-index: 3;
+}
+
+.vertical-card-heading {
+  font-size: 1.4rem;
+  font-weight: bold;
+  /* padding: 0.4rem 0; */
+  margin-bottom: 0;
+}
+
+/* horizontal card crousel-items */
+.img-horizontal {
+  height: 10vh;
+  object-fit: cover;
+}
+
+.horizontal-card {
+  background: #ededed;
+  cursor: pointer;
+}
+
+.horizontal-card-game-platforms {
+  font-size: 0.8rem;
+}
+.horizontal-card-game-buy {
+  display: none;
+}
+.horizontal-card:hover .horizontal-card-game-buy {
+  display: initial;
+}
+.horizontal-card:hover .horizontal-card-game-platforms {
+  display: none;
 }
 
 /* animations */
