@@ -37,9 +37,9 @@
     />
     <!-- random pick link "https://picsum.photos/300?random=2" -->
 
-    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="style.css" />
 
-    <title>test!</title>
+    <title>GOG Clone</title>
   </head>
   <body class="">
     <!-- navbar -->
@@ -547,7 +547,7 @@
     >
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-9 pr-0">
+          <div class="col-12 col-md-9 pr-3">
             <p class="mb-0 pt-2">
               Lorem ipsum dolor sit
               <span class="text-violet font-weight-bold">amet consectetur</span>
@@ -605,57 +605,65 @@
 
       <!-- carousel -->
       <div
-        id="carouselExampleIndicators2"
+        id="featuredDealsCarousel"
         class="carousel slide"
         data-ride="carousel"
       >
         <ol class="carousel-indicators">
           <li
-            data-target="#carouselExampleIndicators2"
+            data-target="#featuredDealsCarousel"
             data-slide-to="0"
             class="active"
           ></li>
-          <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+          <li data-target="#featuredDealsCarousel" data-slide-to="1"></li>
+          <li data-target="#featuredDealsCarousel" data-slide-to="2"></li>
         </ol>
 
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row">
-              <div class="col col-md-3">
-                <img
-                  src="gog-assets/vertical/01.jpg"
-                  class="d-block w-100"
-                  alt=""
-                />
+              <div class="col">
+                <div class="vertical-card">
+                  <img
+                    src="gog-assets/vertical/01.jpg"
+                    class="d-block w-100 img-vertical"
+                    alt=""
+                  />
+                </div>
               </div>
               <div class="col col-md-3">
-                <img
-                  src="gog-assets/vertical/02.jpg"
-                  class="d-block w-100"
-                  alt=""
-                />
+                <div class="vertical-card">
+                  <img
+                    src="gog-assets/vertical/02.jpg"
+                    class="d-block w-100 img-vertical"
+                    alt=""
+                  />
+                </div>
               </div>
               <div class="col col-md-3">
-                <img
-                  src="gog-assets/vertical/03.jpg"
-                  class="d-block w-100"
-                  alt=""
-                />
+                <div class="vertical-card">
+                  <img
+                    src="gog-assets/vertical/03.jpg"
+                    class="d-block w-100 img-vertical"
+                    alt=""
+                  />
+                </div>
               </div>
               <div class="col col-md-3">
-                <img
-                  src="gog-assets/vertical/04.jpg"
-                  class="d-block w-100"
-                  alt=""
-                />
+                <div class="vertical-card">
+                  <img
+                    src="gog-assets/vertical/04.jpg"
+                    class="d-block w-100 img-vertical"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
         <a
           class="carousel-control-prev"
-          href="#carouselExampleIndicators2"
+          href="#featuredDealsCarousel"
           role="button"
           data-slide="prev"
         >
@@ -664,7 +672,7 @@
         </a>
         <a
           class="carousel-control-next"
-          href="#carouselExampleIndicators2"
+          href="#featuredDealsCarousel"
           role="button"
           data-slide="next"
         >
@@ -684,6 +692,6 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
-    <script src="test.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

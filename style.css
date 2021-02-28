@@ -42,6 +42,7 @@ body {
   /* font-size: var(--fs-body); */
   /* line-height: 1.6; */
   line-height: 1.5;
+  height: 5000vh;
 }
 h1,
 h2,
@@ -126,7 +127,7 @@ nav.navbar .nav-link {
     object-fit: contain;
   } 
 } */
-.carousel-item {
+#carouselExampleIndicators .carousel-item {
   height: 40vh;
 }
 
@@ -255,7 +256,8 @@ nav.navbar .nav-link {
   color: #985eb2;
 }
 
-/* now on sale section */
+/* now on sale section ------------------------------ */
+/* nav */
 #salesUL li a {
   color: grey;
   padding-left: 0;
@@ -273,10 +275,14 @@ nav.navbar .nav-link {
   border-bottom: 4px solid #723bbd;
 }
 
-/* second carousel */
-#carouselExampleIndicators2 img {
-  height: 30vh;
+/* general carousel cards styling */
+.now-on-sale-section .img-vertical {
+  min-height: 35vh;
+  max-height: 100%;
+  object-fit: cover;
 }
+
+/* featuredDealsCarousel carousel */
 
 /* animations */
 
