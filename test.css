@@ -469,3 +469,7 @@ nav.navbar .nav-link {
     both;
   animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
+
+/* carousel media */
+@media (max-width: 767px) {
+}

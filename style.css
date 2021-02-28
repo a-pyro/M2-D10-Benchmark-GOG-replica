@@ -292,8 +292,49 @@ nav.navbar .nav-link {
 }
 
 .carousel-indicators {
-  bottom: -15%;
+  top: -8%;
 }
+
+.carousel-indicators li {
+  height: 9px;
+  width: 40px;
+}
+
+/* .carousel-indicators li.active {
+  background-color: #723bbd;
+}
+.carousel-indicators li {
+  transition: background 0.4s ease;
+} */
+.carousel-indicators li {
+  position: relative;
+}
+.carousel-indicators li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #723bbd;
+  width: 0%;
+  z-index: 3;
+}
+.carousel-indicators li.active::after {
+  animation: slide-loading;
+  animation-duration: 5000ms;
+}
+
+@keyframes slide-loading {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
 /* overlays */
 .vertical-card {
   position: relative;
